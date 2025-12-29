@@ -94,12 +94,11 @@ SpriteAtlas:
     - 5fe5454ec8605de43809133b020d1b69: -1301984742
     - 5fe5454ec8605de43809133b020d1b69: -350269101
     - 5fe5454ec8605de43809133b020d1b69: -44259460
-    - 5fe5454ec8605de43809133b020d1b69: -1042382002
-    - 5fe5454ec8605de43809133b020d1b69: -1306090582
-    - 5fe5454ec8605de43809133b020d1b69: 1096680104
     - 5fe5454ec8605de43809133b020d1b69: 1713858212
-    - 5fe5454ec8605de43809133b020d1b69: 899480125
     - 5fe5454ec8605de43809133b020d1b69: -1603182679
+    - 5fe5454ec8605de43809133b020d1b69: -934039747
+    - 5fe5454ec8605de43809133b020d1b69: 1631194995
+    - 5fe5454ec8605de43809133b020d1b69: 1670800899
     - 5fe5454ec8605de43809133b020d1b69: -979371680
     - 5fe5454ec8605de43809133b020d1b69: -204582528
     - 5fe5454ec8605de43809133b020d1b69: -303487647
@@ -139,6 +138,7 @@ SpriteAtlas:
     - 5fe5454ec8605de43809133b020d1b69: 362551460
     - 5fe5454ec8605de43809133b020d1b69: -904001968
     - 5fe5454ec8605de43809133b020d1b69: -890148158
+    - 5fe5454ec8605de43809133b020d1b69: -417761061
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: -762311695, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
@@ -185,12 +185,11 @@ SpriteAtlas:
   - {fileID: -1301984742, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
   - {fileID: -350269101, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
   - {fileID: -44259460, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
-  - {fileID: -1042382002, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
-  - {fileID: -1306090582, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
-  - {fileID: 1096680104, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
   - {fileID: 1713858212, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
-  - {fileID: 899480125, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
   - {fileID: -1603182679, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
+  - {fileID: -934039747, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
+  - {fileID: 1631194995, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
+  - {fileID: 1670800899, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
   - {fileID: -979371680, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
   - {fileID: -204582528, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
   - {fileID: -303487647, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
@@ -230,6 +229,7 @@ SpriteAtlas:
   - {fileID: 362551460, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
   - {fileID: -904001968, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
   - {fileID: -890148158, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
+  - {fileID: -417761061, guid: 5fe5454ec8605de43809133b020d1b69, type: 3}
   m_PackedSpriteNamesToIndex:
   - TileSpikes
   - Stone2
@@ -275,12 +275,11 @@ SpriteAtlas:
   - TilePlant3
   - TilePlant1
   - Background5
-  - Background4
-  - Background1
-  - Background3
   - TilePlant8
-  - Background2
   - TilePlant9
+  - BG-1
+  - BG-3
+  - BG-2
   - TileBackGround9
   - Tree5
   - TileBackGround8
@@ -320,6 +319,7 @@ SpriteAtlas:
   - TilePlant11
   - TilePlant10
   - TilePlant12
+  - Clouds
   m_RenderDataMap: {}
   m_Tag: Atlas
   m_IsVariant: 0
