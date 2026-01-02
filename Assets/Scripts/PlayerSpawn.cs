@@ -7,7 +7,7 @@ public class PlayerSpawn : MonoBehaviour
     [SerializeField] GameObject playerPrefab;
     void Awake()
     {
-        Instantiate(playerPrefab, transform.position, Quaternion.identity);
+        // Instantiate(playerPrefab, transform.position, Quaternion.identity);
 
     }
     void Start()
