@@ -12,5 +12,6 @@ public class HitboxScript : MonoBehaviour
     void Update()
     {
         
+        
     }
 }

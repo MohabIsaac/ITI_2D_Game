@@ -25,8 +25,13 @@ public class HeroKnight : MonoBehaviour {
     private float               m_delayToIdle = 0.0f;
     private float               m_rollDuration = 8.0f / 14.0f;
     private float               m_rollCurrentTime;
+    private bool isDead = false;
+    private PlayerAttack playerAttack;
 
-
+    void Awake()
+    {
+    playerAttack = GetComponent<PlayerAttack>();
+    }
     // Use this for initialization
     void Start ()
     {
@@ -71,17 +76,8 @@ public class HeroKnight : MonoBehaviour {
         float inputX = Input.GetAxis("Horizontal");
 
         // Swap direction of sprite depending on walk direction
-        if (inputX > 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = false;
-            m_facingDirection = 1;
-        }
-            
-        else if (inputX < 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
-            m_facingDirection = -1;
-        }
+        HandleFlip(inputX);
+
 
         // Move
         if (!m_rolling )
@@ -180,6 +176,22 @@ public class HeroKnight : MonoBehaviour {
 
     // Animation Events
     // Called in slide animation.
+    void HandleFlip(float inputX)
+    {
+        if (inputX > 0 && m_facingDirection != 1)
+        {
+            m_facingDirection = 1;
+            GetComponent<SpriteRenderer>().flipX = false;
+            playerAttack.SetFacingDirection(1);
+        }
+        else if (inputX < 0 && m_facingDirection != -1)
+        {
+            m_facingDirection = -1;
+            GetComponent<SpriteRenderer>().flipX = true;
+            playerAttack.SetFacingDirection(-1);
+        }
+    }
+
     void AE_SlideDust()
     {
         Vector3 spawnPosition;
@@ -197,4 +209,21 @@ public class HeroKnight : MonoBehaviour {
             dust.transform.localScale = new Vector3(m_facingDirection, 1, 1);
         }
     }
+
+        public void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+
+        // Play death animation
+        m_animator.SetTrigger("Death");
+
+        //Optional: disable player controls
+        m_body2d.linearVelocity = Vector2.zero;
+
+        //Optional: destroy player after animation
+        Destroy(gameObject, 1.0f); // adjust delay to match animation length
+    }
+
+
 }
